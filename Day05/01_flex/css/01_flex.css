@@ -74,4 +74,12 @@
 .cross-center{ align-items: center; }
 .cross-start{ align-items: flex-start;}
 .cross-end{ align-items: flex-end;}
-.cross-strech{ align-items: stretch;}
+.cross-strech{ align-items: stretch; }  /* height: auto; 적용되어야 가능 */
+
+/* align-content */
+.content-stretch { align-content: stretch; flex-wrap: wrap;}
+.content-start { align-content: flex-start; flex-wrap: wrap;}
+.content-end { align-content: flex-end; flex-wrap: wrap;}
+.content-center { align-content: center; flex-wrap: wrap;}
+.content-between { align-content: space-between; flex-wrap: wrap;}
+.content-around { align-content: space-around; flex-wrap: wrap;}
