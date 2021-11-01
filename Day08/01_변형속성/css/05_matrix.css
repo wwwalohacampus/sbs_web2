@@ -1,8 +1,9 @@
 
 .container {
     position: relative;
-    margin: 0 auto;
-    width: 1200px;
+    margin: 100px auto;
+    padding: 50px;
+    width: 1400px;
     height: 500px;
     border: 3px dashed orange;
     box-sizing: border-box;
@@ -39,15 +40,14 @@
     z-index: -1;
 }
 
-.translate1:hover {
-    transform: translate(45px, 45px);
+.matrix1:hover {
+    /* matrix() 함수의 속성값 
+      : scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() */
+    transform: matrix(2, 2, 0, 2, 45, 0);
 }
 
-.translate2:hover {
-    transform: translateX(45px);
+.matrix2:hover {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
 }
 
-.translate3:hover {
-    transform: translateY(45px);
-}
 
