@@ -233,6 +233,7 @@ section.sns ul li a p.img img {width: 100%; height: 300px;}
 section.sns ul li a:hover p.img:before,section.sns ul li a:focus p.img:before {width: 100%; transition: all 0.6s;}
 section.sns ul li a p.img:after {content: 'BLOG'; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); font-family: 'Exo 2', sans-serif; font-size: 15px; color: #fff; border: 1px solid #fff; border-radius: 40px; padding: 5px 30px; opacity: 0; transition: all 0.5s;}
 section.sns ul li a:hover p.img:after,section.sns ul li a:focus p.img:after {opacity: 1; transition: all 0.5s;}
+
 section.sns ul li a .bottom {width: 100%; padding: 20px 0 20px 30px; box-sizing: border-box;}
 section.sns ul li a .bottom p {font-size: 18px; font-weight: bold;}
 section.sns ul li a .bottom p.color {color: #ff8342; font-size: 15px; font-weight: normal;}
@@ -290,10 +291,10 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
 /*태블릿모드 1024*/
 @media screen and (max-width:1024px) {
     header .innerHeader {width: 95%; min-width: 90%;}
+    section.visual { height: 300px; margin-top: 100px;} 
+    section.visual .slide li { height: 300px; }
     section.visual .slide li .txt { font-size: 1.3rem; line-height: 1.4rem; height: 50px; width: 30%; top: 20%;}
     section.visual .slide li .find { font-size: 1.2rem; line-height: 1.5rem; height: 30px; width: 140px; top: 40%;}
-    section.visual { height: 300px; margin-top: 60px;} 
-    section.visual .slide li { height: 300px; }
     .innerHeader .gnb, .innerHeader .tnb {display: none;}
     .innerHeader .gnbMo {display: block; color: #fff; font-size: 40px;float: right;}
     section.main .mainTitle {width: 80%;}
@@ -306,10 +307,10 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
 }
 /*태블릿모드 768*/
 @media screen and (max-width:768px) {
-    section.visual .slide li .txt { font-size: 0.9rem; line-height: 1.2rem; height: 40px; width: 30%; top: 20%;}
-    section.visual .slide li .find { font-size: 0.8rem; line-height: 1.2rem; height: 20px; width: 100px; top: 40%;}
     section.visual { height: 300px; margin-top: 60px;} 
     section.visual .slide li { height: 300px; }
+    section.visual .slide li .txt { font-size: 0.9rem; line-height: 1.2rem; height: 40px; width: 30%; top: 20%;}
+    section.visual .slide li .find { font-size: 0.8rem; line-height: 1.2rem; height: 20px; width: 100px; top: 40%;}
     section.main .mainTitle h2 {font-size: 40px;}
     section.main .mainTitle p {font-size: 20px;}
     section.contents {padding: 50px 0;}
@@ -331,10 +332,10 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
         header {height: 60px; line-height: 60px;}    
     .innerHeader {height: 100%; line-height: 60px;}    
     .innerHeader .logo {padding-top: 5px;}     
-    section.visual .slide li .txt { font-size: 0.9rem; line-height: 1.2rem; height: 40px; width: 100%; top: 20%;}
-    section.visual .slide li .find { font-size: 0.8rem; line-height: 1.2rem; height: 20px; width: 100px; top: 40%;}
     section.visual { height: 300px; margin-top: 60px;} 
     section.visual .slide li { height: 300px; }
+    section.visual .slide li .txt { font-size: 0.9rem; line-height: 1.2rem; height: 40px; width: 100%; top: 20%;}
+    section.visual .slide li .find { font-size: 0.8rem; line-height: 1.2rem; height: 20px; width: 100px; top: 40%;}
     section.main .mainTitle h2 {font-size: 30px;}     
     section.main .mainTitle p {font-size: 16px;}    
     section.main .mainTitle .view {width: 150px; font-size: 14px;}    
@@ -350,7 +351,7 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     footer .inner .address li:last-child {margin-left: 22%;}  
 }
 /*모바일 모드 320*/ 
-@media screen and (max-width:414px) {
+@media screen and (max-width:320px) {
     br.mo {display: block;}
     .wrap {min-width: 320px; width: 100vw;}
     header .innerHeader{min-width: 320px;}
@@ -360,8 +361,6 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     section.visual .slide li .find { font-size: 0.8rem; line-height: 1.2rem; height: 20px; width: 100px;}
     section.visual { height: 300px; margin-top: 60px;} 
     section.visual .slide li { height: 300px; }
-    section.main .mainTitle h2 {font-size: 22px;}
-    section.main .mainTitle p {font-size: 14px;}
     section.contents {padding: 10px 0;}
     section.contents ul li a .text {padding: 15px;}
     section.contents ul li a .text h3 {font-size: 18px; margin-bottom: 5px;}
