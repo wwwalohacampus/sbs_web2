@@ -255,27 +255,6 @@ footer .inner .list li a:hover,footer .inner .list li a:focus {color: #ff8342; t
 footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',sans-serif;}
 
 
-@media only screen and (min-width: 750px) {
-    .img-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Bigger than Phones(laptop / desktop) */
-@media only screen and (min-width: 970px) {
-
-    section.portfolio .gridBox {
-        width: 1200px;
-        margin: 0 auto;
-    }
-
-    .img-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
-
 /*1599*/
 @media screen and (max-width:1599px) {
     header .innerHeader {width: 95%; min-width: 1024px;}
@@ -287,6 +266,15 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     footer .inner{width: 95%; min-width: 90%;}
     footer .inner .list li {margin-left: 20px;}
     footer .inner .list li a:after {right: -13px;}   
+
+    section.portfolio .gridBox {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 /*태블릿모드 1024*/
 @media screen and (max-width:1024px) {
@@ -304,6 +292,14 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     section.me ul.list li > p {margin-bottom: 10px;}
     section.sns ul li {width: 32.2%; margin-right: 1.7%;}
     footer .inner .list {display: none;}
+
+    section.portfolio .gridBox {
+        width: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /*태블릿모드 768*/
 @media screen and (max-width:768px) {
@@ -326,12 +322,21 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     footer .inner .ftLogo {float: none; width: 100%; text-align: center;}
     footer .inner .address {float: none; width: 100%; margin-left: 32%;}
     footer .inner .address li:last-child {margin-left: 12%;}
+
+    section.portfolio .gridBox {
+        width: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 /*태블릿모드 414*/ 
 @media screen and (max-width:414px) {
-        header {height: 60px; line-height: 60px;}    
+    header {height: 60px; line-height: 60px;}    
     .innerHeader {height: 100%; line-height: 60px;}    
     .innerHeader .logo {padding-top: 5px;}     
+    .innerHeader .logo img { height: 60px;}
     section.visual { height: 300px; margin-top: 60px;} 
     section.visual .slide li { height: 300px; }
     section.visual .slide li .txt { font-size: 0.9rem; line-height: 1.2rem; height: 40px; width: 100%; top: 20%;}
@@ -349,6 +354,15 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     section.me ul.list > li {padding: 20px 0 20px 45px; }
     footer .inner .address {margin-left: 15%;}
     footer .inner .address li:last-child {margin-left: 22%;}  
+    footer .inner .ftLogo img { height: 50px;}
+
+    section.portfolio .gridBox {
+        width: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 /*모바일 모드 320*/ 
 @media screen and (max-width:320px) {
@@ -369,6 +383,14 @@ footer .inner .list li:last-child a {font-weight: bold; font-family: 'Exo 2',san
     section.service .imgBox .inner .bottom a {margin-left:18px; }
     footer .inner .address {margin-left: 5%;}
     footer .inner .address li:last-child {margin-left: 27%;}   
+
+    section.portfolio .gridBox {
+        width: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
